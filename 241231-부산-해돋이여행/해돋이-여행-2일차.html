@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f97138ca6409fa4675efd56e8915c6e8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f97138ca6409fa4675efd56e8915c6e8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f97138ca6409fa4675efd56e8915c6e8 = L.map(
+                "map_f97138ca6409fa4675efd56e8915c6e8",
+                {
+                    center: [35.08968166666667, 129.03378],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d82d1d3a5e429d3c60eed8e73b20c049 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d82d1d3a5e429d3c60eed8e73b20c049.addTo(map_f97138ca6409fa4675efd56e8915c6e8);
+        
+    
+            var marker_cluster_f3ddac205c7c4819bc2da6bad0d4f382 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_1c4e917365edc764172147d864cc0c3f = L.marker(
+                [35.075697, 129.016741],
+                {
+}
+            ).addTo(marker_cluster_f3ddac205c7c4819bc2da6bad0d4f382);
+        
+    
+        var custom_icon_d5cc72c932afd61b2874584e1cb6a9f8 = L.icon({
+  "iconUrl": "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+  "iconSize": [30, 30],
+});
+        marker_1c4e917365edc764172147d864cc0c3f.setIcon(custom_icon_d5cc72c932afd61b2874584e1cb6a9f8);
+        
+    
+        var popup_2c3451bb7ff77316d799b10891cb5e46 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_74ff8929192d91677bd40be239a4750e = $(`<div id="html_74ff8929192d91677bd40be239a4750e" style="width: 100.0%; height: 100.0%;">     <b>일정명:</b> 해돋이 - 송도해수욕장<br>     <b>날짜:</b> 2025-01-01<br>     <b>시간:</b> 06:00<br>     <b>메모:</b> <i></i><br>     <img src='https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=lji2E2kdFi34GTahHZyrJg&cb_client=search.revgeo_and_fetch.gps&w=96&h=64&yaw=124.71954&pitch=0&thumbfov=100' width='100' height='100'>     </div>`)[0];
+                popup_2c3451bb7ff77316d799b10891cb5e46.setContent(html_74ff8929192d91677bd40be239a4750e);
+            
+        
+
+        marker_1c4e917365edc764172147d864cc0c3f.bindPopup(popup_2c3451bb7ff77316d799b10891cb5e46)
+        ;
+
+        
+    
+    
+            var marker_789c0a9d749396af670c08599fe8358a = L.marker(
+                [35.078558, 129.044907],
+                {
+}
+            ).addTo(marker_cluster_f3ddac205c7c4819bc2da6bad0d4f382);
+        
+    
+        var custom_icon_ea44af15191a39a75f424bafb17df9f5 = L.icon({
+  "iconUrl": "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+  "iconSize": [30, 30],
+});
+        marker_789c0a9d749396af670c08599fe8358a.setIcon(custom_icon_ea44af15191a39a75f424bafb17df9f5);
+        
+    
+        var popup_c7b812521c783ecd77f74f0f17f12938 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c7ed547c6ee6ce8a23ac0a4266dc8f4 = $(`<div id="html_9c7ed547c6ee6ce8a23ac0a4266dc8f4" style="width: 100.0%; height: 100.0%;">     <b>일정명:</b> 흰여울 문화마을<br>     <b>날짜:</b> 2025-01-01<br>     <b>시간:</b> 10:00<br>     <b>메모:</b> <i>마그넷 구매!</i><br>     <img src='https://lh5.googleusercontent.com/p/AF1QipOxRwiPnfyfylSggTLeQPN2VBzpLAWfJEUVFn5f=w408-h306-k-no' width='100' height='100'>     </div>`)[0];
+                popup_c7b812521c783ecd77f74f0f17f12938.setContent(html_9c7ed547c6ee6ce8a23ac0a4266dc8f4);
+            
+        
+
+        marker_789c0a9d749396af670c08599fe8358a.bindPopup(popup_c7b812521c783ecd77f74f0f17f12938)
+        ;
+
+        
+    
+    
+            var marker_2d138542a18eed23e2a141c810080aaf = L.marker(
+                [35.11479, 129.039692],
+                {
+}
+            ).addTo(marker_cluster_f3ddac205c7c4819bc2da6bad0d4f382);
+        
+    
+        var custom_icon_353a5e3175b04dc07e67f371415ce0cf = L.icon({
+  "iconUrl": "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+  "iconSize": [30, 30],
+});
+        marker_2d138542a18eed23e2a141c810080aaf.setIcon(custom_icon_353a5e3175b04dc07e67f371415ce0cf);
+        
+    
+        var popup_a1e44f36ee9d23f333f108d1bfd118d9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2ea3b36f987f6fedbc303dc8616279f = $(`<div id="html_d2ea3b36f987f6fedbc303dc8616279f" style="width: 100.0%; height: 100.0%;">     <b>일정명:</b> 부산역<br>     <b>날짜:</b> 2025-01-01<br>     <b>시간:</b> 14:48<br>     <b>메모:</b> <i>13:45분 꺼를 탈 수도 있음</i><br>     <img src='https://lh5.googleusercontent.com/p/AF1QipPiKKZaHav4WrlhRX50KzzwKRhu70p4fuqScMQS=w408-h306-k-no' width='100' height='100'>     </div>`)[0];
+                popup_a1e44f36ee9d23f333f108d1bfd118d9.setContent(html_d2ea3b36f987f6fedbc303dc8616279f);
+            
+        
+
+        marker_2d138542a18eed23e2a141c810080aaf.bindPopup(popup_a1e44f36ee9d23f333f108d1bfd118d9)
+        ;
+
+        
+    
+    
+            marker_cluster_f3ddac205c7c4819bc2da6bad0d4f382.addTo(map_f97138ca6409fa4675efd56e8915c6e8);
+        
+    
+            ant_path_ffde574d6d50a81242c9e86b68341775 = L.polyline.antPath(
+              [[35.075697, 129.016741], [35.078558, 129.044907]],
+              {
+  "stroke": true,
+  "color": "blue",
+  "weight": 2,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_f97138ca6409fa4675efd56e8915c6e8);
+        
+    
+            var marker_01a805158bab7b4fd1816ff6633a2adc = L.marker(
+                [35.0771275, 129.030824],
+                {
+}
+            ).addTo(map_f97138ca6409fa4675efd56e8915c6e8);
+        
+    
+            var div_icon_4c198c0d20f9dda80c85022838dbd691 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size: 12px; color: #FF7D7D; font-weight: bold; background-color: rgba(255, 255, 255, 0.7); padding: 5px; border-radius: 3px; display: inline-block;\u0027\u003e2.59 km\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_01a805158bab7b4fd1816ff6633a2adc.setIcon(div_icon_4c198c0d20f9dda80c85022838dbd691);
+        
+    
+            ant_path_334be37fa1fb957d059a8989c3bf5c58 = L.polyline.antPath(
+              [[35.078558, 129.044907], [35.11479, 129.039692]],
+              {
+  "stroke": true,
+  "color": "blue",
+  "weight": 2,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_f97138ca6409fa4675efd56e8915c6e8);
+        
+    
+            var marker_3ca9b0937a543811c29041ac204ad9f5 = L.marker(
+                [35.096674, 129.0422995],
+                {
+}
+            ).addTo(map_f97138ca6409fa4675efd56e8915c6e8);
+        
+    
+            var div_icon_1ff1424fe1946cae435a64692f1fe5ca = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size: 12px; color: #FF7D7D; font-weight: bold; background-color: rgba(255, 255, 255, 0.7); padding: 5px; border-radius: 3px; display: inline-block;\u0027\u003e4.05 km\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_3ca9b0937a543811c29041ac204ad9f5.setIcon(div_icon_1ff1424fe1946cae435a64692f1fe5ca);
+        
+</script>
+</html>
